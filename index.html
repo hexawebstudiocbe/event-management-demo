@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Events | Premium Event Management in Tamil Nadu</title>
+    <meta name="description" content="Aura Events offers luxury wedding planning, corporate events, and premium event management services across Chennai, Coimbatore, Madurai, and Tamil Nadu.">
+    <meta name="keywords" content="Event Management, Wedding Planner, Corporate Events, Tamil Nadu, Chennai Event Planners, Stage Decoration, Luxury Weddings">
+    <link rel="canonical" href="https://auraevents.in/">
+    
+    <!-- OpenGraph & Twitter -->
+    <meta property="og:title" content="Aura Events | Luxury Event Management">
+    <meta property="og:description" content="Creating Extraordinary Events That Last Forever. Premium event management services.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://auraevents.in/">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Schema.org for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EventResaleService",
+      "name": "Aura Events",
+      "image": "https://auraevents.in/assets/images/logo.png",
+      "@id": "",
+      "url": "https://auraevents.in",
+      "telephone": "+919876543210",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Event Avenue, T. Nagar",
+        "addressLocality": "Chennai",
+        "postalCode": "600017",
+        "addressCountry": "IN",
+        "addressRegion": "Tamil Nadu"
+      }
+    }
+    </script>
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="css/variables.css?v=4">
+    <link rel="stylesheet" href="css/utilities.css?v=4">
+    <link rel="stylesheet" href="css/animations.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/responsive.css?v=4">
+    
+    <style>
+        /* Home Specific Styles */
+        .hero-section {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .hero-video-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -2;
+        }
+        
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(27, 27, 27, 0.7), rgba(27, 27, 27, 0.9));
+            z-index: -1;
+        }
+        
+        .hero-content {
+            text-align: center;
+            color: var(--clr-accent);
+            max-width: 900px;
+            padding: 0 1.5rem;
+            z-index: 1;
+        }
+        
+        .hero-title {
+            font-size: clamp(3rem, 6vw, 5.5rem);
+            margin-bottom: 1.5rem;
+            color: var(--clr-accent);
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+        
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 2vw, 1.5rem);
+            margin-bottom: 2.5rem;
+            color: #eeeeee;
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--clr-accent);
+            animation: float 2s infinite;
+        }
+
+        /* About Section */
+        .about-collage {
+            position: relative;
+            height: 100%;
+            min-height: 500px;
+        }
+        
+        .about-img-1 {
+            width: 70%;
+            border-radius: var(--border-radius);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .about-img-2 {
+            width: 50%;
+            border-radius: var(--border-radius);
+            position: absolute;
+            bottom: -30px;
+            right: 0;
+            z-index: 2;
+            border: 8px solid var(--clr-bg);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .experience-badge {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--clr-primary);
+            color: var(--clr-accent);
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 3;
+            box-shadow: var(--shadow-gold);
+            text-align: center;
+        }
+
+        /* Services Grid */
+        .service-card {
+            padding: 2rem;
+            text-align: center;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--clr-primary);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .service-card:hover .service-icon {
+            transform: scale(1.1) translateY(-10px);
+        }
+
+        /* Stats */
+        .stat-box {
+            padding: 3rem 2rem;
+            text-align: center;
+            border-right: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .stat-box:last-child {
+            border-right: none;
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-family: var(--font-heading);
+            color: var(--clr-primary);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Placeholder -->
+    <div id="header-placeholder"></div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Fallback to image if video doesn't load/exist -->
+        <video class="hero-video-bg" autoplay loop muted playsinline>
+            <source src="assets/videos/hero-video.mp4" type="video/mp4">
+            <img src="assets/images/hero/hero-bg.jpg" alt="Hero Background">
+        </video>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content" data-aos="zoom-in" data-aos-duration="1500">
+            <h1 class="hero-title">Creating Extraordinary Events That Last Forever</h1>
+            <p class="hero-subtitle">Premium Event Management across Tamil Nadu</p>
+            <div class="d-flex justify-center gap-1 flex-wrap">
+                <a href="contact.html" class="btn btn-primary">Book Consultation</a>
+                <a href="portfolio.html" class="btn btn-light">View Portfolio</a>
+            </div>
+        </div>
+
+        <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+            <span>Scroll</span>
+            <i class="fa-solid fa-chevron-down mt-1"></i>
+        </a>
+    </section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="grid grid-2 align-center gap-3">
+                <div class="about-collage" data-aos="fade-right">
+                    <img src="assets/images/hero/about-1.jpg" alt="Luxury Wedding Setup" class="about-img-1" loading="lazy">
+                    <img src="assets/images/hero/about-2.jpg" alt="Corporate Event Stage" class="about-img-2" loading="lazy">
+                    <div class="experience-badge">
+                        <span style="font-size: 2rem; font-weight: 700; font-family: var(--font-heading)">10+</span>
+                        <span style="font-size: 0.8rem; text-transform: uppercase;">Years Exp.</span>
+                    </div>
+                </div>
+                
+                <div class="about-content" data-aos="fade-left">
+                    <h5 class="section-subtitle text-left">About Aura Events</h5>
+                    <h2 class="mb-2">We Turn Your Dream Events Into Reality</h2>
+                    <p class="mb-2">Based in the heart of Tamil Nadu, Aura Events is a premier event management company specializing in creating unforgettable luxury experiences. From grand South Indian weddings to high-profile corporate galas, our team of dedicated professionals handles everything with meticulous attention to detail.</p>
+                    <ul class="mb-3" style="line-height: 2;">
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px;"></i> 1000+ Successful Events Delivered</li>
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px;"></i> End-to-End Event Management</li>
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px;"></i> Highly Creative & Professional Team</li>
+                        <li><i class="fa-solid fa-check text-primary" style="margin-right: 10px;"></i> Bespoke Custom Themes</li>
+                    </ul>
+                    <a href="about.html" class="btn btn-primary">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Overview Section -->
+    <section class="section section-bg-light">
+        <div class="container">
+            <h5 class="section-subtitle">Our Services</h5>
+            <h2 class="section-title">What We Do Best</h2>
+            
+            <div class="grid grid-3 mt-3">
+                <div class="card service-card" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fa-solid fa-rings-wedding service-icon"></i>
+                    <h3>Wedding Planning</h3>
+                    <p class="mb-2">From intimate ceremonies to grand destination weddings, we craft bespoke matrimonial experiences.</p>
+                    <a href="services.html" class="text-primary font-weight-bold" style="font-weight:600;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="card service-card" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fa-solid fa-briefcase service-icon"></i>
+                    <h3>Corporate Events</h3>
+                    <p class="mb-2">Product launches, conferences, and award ceremonies designed to elevate your brand's presence.</p>
+                    <a href="services.html" class="text-primary font-weight-bold" style="font-weight:600;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="card service-card" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fa-solid fa-music service-icon"></i>
+                    <h3>Stage & Entertainment</h3>
+                    <p class="mb-2">State-of-the-art sound, lighting, and spectacular stage decorations that wow your audience.</p>
+                    <a href="services.html" class="text-primary font-weight-bold" style="font-weight:600;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <a href="services.html" class="btn btn-secondary">View All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="section section-bg-dark" style="padding: 0;">
+        <div class="container">
+            <div class="grid grid-4" style="gap:0;">
+                <div class="stat-box" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-number"><span class="counter-value" data-target="1200">0</span>+</div>
+                    <div class="stat-label">Events Completed</div>
+                </div>
+                <div class="stat-box" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-number"><span class="counter-value" data-target="950">0</span>+</div>
+                    <div class="stat-label">Happy Clients</div>
+                </div>
+                <div class="stat-box" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="stat-number"><span class="counter-value" data-target="150">0</span>+</div>
+                    <div class="stat-label">Corporate Projects</div>
+                </div>
+                <div class="stat-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="stat-number"><span class="counter-value" data-target="50">0</span>+</div>
+                    <div class="stat-label">Expert Team Members</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section" style="background: linear-gradient(rgba(200, 155, 60, 0.9), rgba(200, 155, 60, 0.9)), url('assets/images/backgrounds/placeholder-1.svg') center/cover;">
+        <div class="container text-center">
+            <h2 class="mb-1 text-accent" data-aos="fade-up">Ready to Plan Your Next Big Event?</h2>
+            <p class="mb-3 text-accent" data-aos="fade-up" data-aos-delay="100" style="font-size: 1.2rem;">Let's create something extraordinary together.</p>
+            <a href="contact.html" class="btn btn-secondary" data-aos="fade-up" data-aos-delay="200" style="background:#fff; color:var(--clr-primary); border:none;">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    
+    <script src="js/utils.js?v=4" defer></script>
+    <script src="js/navigation.js?v=4" defer></script>
+    <script src="js/aos-init.js?v=4" defer></script>
+    <script src="js/swiper-init.js?v=4" defer></script>
+    <script src="js/counter.js?v=4" defer></script>
+    <script src="js/scroll-effects.js?v=4" defer></script>
+    <script src="js/main.js?v=4" defer></script>
+</body>
+</html>

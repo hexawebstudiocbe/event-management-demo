@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog & Insights | Aura Events</title>
+    <meta name="description" content="Read our latest blog posts on event trends, wedding planning tips, and corporate event management strategies in Tamil Nadu.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="css/variables.css?v=4">
+    <link rel="stylesheet" href="css/utilities.css?v=4">
+    <link rel="stylesheet" href="css/animations.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/responsive.css?v=4">
+
+    <style>
+        .blog-card {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        
+        .blog-img-container {
+            height: 250px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .blog-date {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: var(--clr-primary);
+            color: var(--clr-accent);
+            padding: 5px 15px;
+            border-radius: 4px;
+            font-weight: 600;
+            z-index: 10;
+        }
+
+        .blog-content {
+            padding: 1.5rem;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blog-category {
+            color: var(--clr-primary);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .blog-title {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-title a {
+            color: var(--clr-secondary);
+        }
+
+        .blog-title a:hover {
+            color: var(--clr-primary);
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-header">
+        <img src="assets/images/backgrounds/bg-3.jpg" alt="Blog Background" class="page-header-bg">
+        <div class="page-header-content" data-aos="fade-up">
+            <h1>Blog & Insights</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Blog</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="grid grid-3">
+                
+                <!-- Blog 1 -->
+                <article class="card blog-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="blog-img-container hover-zoom">
+                        <div class="blog-date">15 Aug 2026</div>
+                        <img src="assets/images/blog/blog-1.jpg" alt="Blog 1" class="img-cover" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Wedding Trends</div>
+                        <h3 class="blog-title"><a href="#">Top 5 Destination Wedding Locations in South India</a></h3>
+                        <p class="mb-2" style="flex-grow: 1;">Discover the most breathtaking venues for your dream destination wedding in Tamil Nadu and Kerala.</p>
+                        <a href="#" class="text-primary font-weight-bold" style="font-weight:600;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog 2 -->
+                <article class="card blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-img-container hover-zoom">
+                        <div class="blog-date">02 Sep 2026</div>
+                        <img src="assets/images/blog/blog-2.jpg" alt="Blog 2" class="img-cover" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Corporate Events</div>
+                        <h3 class="blog-title"><a href="#">How to Maximize ROI from Your Corporate Events</a></h3>
+                        <p class="mb-2" style="flex-grow: 1;">Learn effective strategies to ensure your next corporate conference or seminar brings maximum value to your brand.</p>
+                        <a href="#" class="text-primary font-weight-bold" style="font-weight:600;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Blog 3 -->
+                <article class="card blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-img-container hover-zoom">
+                        <div class="blog-date">28 Sep 2026</div>
+                        <img src="assets/images/blog/blog-3.jpg" alt="Blog 3" class="img-cover" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-category">Event Decor</div>
+                        <h3 class="blog-title"><a href="#">Incorporating Traditional Elements in Modern Decor</a></h3>
+                        <p class="mb-2" style="flex-grow: 1;">A guide to blending timeless traditional Tamil aesthetics with contemporary stage decoration styles.</p>
+                        <a href="#" class="text-primary font-weight-bold" style="font-weight:600;">Read More <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="js/utils.js?v=4" defer></script>
+    <script src="js/navigation.js?v=4" defer></script>
+    <script src="js/aos-init.js?v=4" defer></script>
+    <script src="js/scroll-effects.js?v=4" defer></script>
+    <script src="js/main.js?v=4" defer></script>
+</body>
+</html>

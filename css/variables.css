@@ -1,0 +1,49 @@
+/* variables.css */
+:root {
+    /* Color Palette */
+    --clr-primary: #C89B3C;      /* Gold */
+    --clr-secondary: #1B1B1B;    /* Charcoal Black */
+    --clr-accent: #FFFFFF;       /* White */
+    --clr-bg: #F8F8F8;           /* Background */
+    --clr-success: #2ECC71;      /* Success */
+    --clr-hover: #E8B85C;        /* Hover Gold */
+    --clr-text: #4A4A4A;         /* Body Text */
+    --clr-text-light: #777777;   /* Muted Text */
+    --clr-border: #E0E0E0;       /* Borders */
+
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+
+    /* Font Sizes */
+    --fs-h1: clamp(2.5rem, 5vw, 4.5rem);
+    --fs-h2: clamp(2rem, 4vw, 3.5rem);
+    --fs-h3: clamp(1.75rem, 3vw, 2.5rem);
+    --fs-h4: clamp(1.25rem, 2vw, 1.75rem);
+    --fs-body: 1rem;
+    --fs-small: 0.875rem;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 6rem;
+    --space-xxl: 8rem;
+
+    /* Layout */
+    --container-width: 1320px;
+    --container-padding: 1.5rem;
+    --border-radius-sm: 4px;
+    --border-radius: 8px;
+    --border-radius-lg: 16px;
+
+    /* Transitions & Shadows */
+    --transition-fast: 0.2s ease-in-out;
+    --transition: 0.3s ease-in-out;
+    --transition-slow: 0.5s ease-in-out;
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.12);
+    --shadow-gold: 0 8px 20px rgba(200, 155, 60, 0.2);
+}

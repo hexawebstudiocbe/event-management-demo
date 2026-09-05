@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Packages | Aura Events</title>
+    <meta name="description" content="Discover our tailored event packages. From Silver to Platinum, we have options to suit every budget and requirement.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    
+    <link rel="stylesheet" href="css/variables.css?v=4">
+    <link rel="stylesheet" href="css/utilities.css?v=4">
+    <link rel="stylesheet" href="css/animations.css?v=4">
+    <link rel="stylesheet" href="css/style.css?v=4">
+    <link rel="stylesheet" href="css/responsive.css?v=4">
+
+    <style>
+        .pricing-card {
+            border: 1px solid var(--clr-border);
+            padding: 3rem 2rem;
+            position: relative;
+            text-align: center;
+        }
+
+        .pricing-card.popular {
+            border-color: var(--clr-primary);
+            box-shadow: var(--shadow-lg);
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        @media (max-width: 992px) {
+            .pricing-card.popular {
+                transform: none;
+            }
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--clr-primary);
+            color: var(--clr-accent);
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .pricing-title {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--clr-secondary);
+        }
+
+        .pricing-price {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--clr-primary);
+            margin-bottom: 2rem;
+            font-family: var(--font-heading);
+        }
+
+        .pricing-price span {
+            font-size: 1rem;
+            color: var(--clr-text-light);
+            font-family: var(--font-body);
+        }
+
+        .pricing-features {
+            text-align: left;
+            margin-bottom: 2rem;
+        }
+
+        .pricing-features li {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--clr-border);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .pricing-features li:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-placeholder"></div>
+
+    <section class="page-header">
+        <img src="assets/images/backgrounds/bg-2.jpg" alt="Packages Background" class="page-header-bg">
+        <div class="page-header-content" data-aos="fade-up">
+            <h1>Event Packages</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Packages</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h5 class="section-subtitle">Pricing Plans</h5>
+            <h2 class="section-title mb-3">Choose Your Perfect Package</h2>
+            
+            <div class="grid grid-3 align-center mt-3" style="gap: 2rem;">
+                <!-- Silver Package -->
+                <div class="card pricing-card" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="pricing-title">Silver</h3>
+                    <div class="pricing-price">Custom <span>/ Event</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check text-success"></i> Standard Stage Decoration</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Basic Photography</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Standard Sound System</li>
+                        <li><i class="fa-solid fa-check text-success"></i> On-day Coordination</li>
+                        <li style="color:var(--clr-text-light);"><i class="fa-solid fa-times text-secondary"></i> Catering Services</li>
+                        <li style="color:var(--clr-text-light);"><i class="fa-solid fa-times text-secondary"></i> DJ & Entertainment</li>
+                    </ul>
+                    <a href="contact.html?package=silver" class="btn btn-secondary" style="width: 100%;">Book Silver</a>
+                </div>
+
+                <!-- Gold Package -->
+                <div class="card pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+                    <div class="popular-badge">Most Popular</div>
+                    <h3 class="pricing-title">Gold</h3>
+                    <div class="pricing-price">Premium <span>/ Event</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check text-success"></i> Everything in Silver</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Premium Thematic Decor</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Premium Catering (500 pax)</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Photography & Videography</li>
+                        <li><i class="fa-solid fa-check text-success"></i> DJ & Lighting Setup</li>
+                        <li style="color:var(--clr-text-light);"><i class="fa-solid fa-times text-secondary"></i> Drone Coverage</li>
+                    </ul>
+                    <a href="contact.html?package=gold" class="btn btn-primary" style="width: 100%;">Book Gold</a>
+                </div>
+
+                <!-- Platinum Package -->
+                <div class="card pricing-card" data-aos="fade-up" data-aos-delay="300">
+                    <h3 class="pricing-title">Platinum</h3>
+                    <div class="pricing-price">Luxury <span>/ Event</span></div>
+                    <ul class="pricing-features">
+                        <li><i class="fa-solid fa-check text-success"></i> Everything in Gold</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Luxury Destination Setup</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Celebrity Management</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Cinematic Drone Coverage</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Luxury Premium Catering</li>
+                        <li><i class="fa-solid fa-check text-success"></i> Dedicated Event Manager</li>
+                    </ul>
+                    <a href="contact.html?package=platinum" class="btn btn-secondary" style="width: 100%;">Book Platinum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="js/utils.js?v=4" defer></script>
+    <script src="js/navigation.js?v=4" defer></script>
+    <script src="js/aos-init.js?v=4" defer></script>
+    <script src="js/scroll-effects.js?v=4" defer></script>
+    <script src="js/main.js?v=4" defer></script>
+</body>
+</html>

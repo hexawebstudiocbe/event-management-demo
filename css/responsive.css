@@ -58,6 +58,10 @@
         background-color: var(--clr-secondary) !important;
     }
 
+    .hamburger.active .hamburger-line {
+        background-color: var(--clr-accent) !important;
+    }
+
     .hamburger.active .hamburger-line:nth-child(1) {
         transform: translateY(7px) rotate(45deg);
     }
@@ -98,6 +102,7 @@
         display: block;
         width: 100%;
         text-align: center;
+        color: var(--clr-accent) !important;
     }
 }
 

@@ -60,6 +60,22 @@
             box-shadow: var(--shadow);
             margin-top: 3rem;
         }
+
+        .contact-item > div {
+            min-width: 0;
+            word-wrap: break-word;
+        }
+
+        @media (max-width: 768px) {
+            .contact-info-box,
+            .contact-form-box {
+                padding: 1.5rem;
+            }
+            .map-container {
+                height: 300px;
+                margin-top: 1.5rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -83,7 +99,7 @@
             <div class="grid grid-2 gap-3">
                 
                 <!-- Contact Info -->
-                <div class="contact-info-box" data-aos="fade-right">
+                <div class="contact-info-box" data-aos="fade-up">
                     <h5 class="section-subtitle text-left" style="color:var(--clr-primary);">Get In Touch</h5>
                     <h2 class="mb-3" style="color:var(--clr-accent);">We'd Love To Hear From You</h2>
                     
@@ -121,7 +137,7 @@
                 </div>
 
                 <!-- Contact Form -->
-                <div class="contact-form-box" data-aos="fade-left">
+                <div class="contact-form-box" data-aos="fade-up">
                     <h3 class="mb-2">Request a Free Consultation</h3>
                     <form id="contactForm" novalidate>
                         <div class="grid grid-2 gap-1">
